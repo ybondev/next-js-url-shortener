@@ -19,5 +19,89 @@ h6 {
 }
 
 :root {
-    --primary-bg: 
+  --primary-bg: #121212;
+  --text-color: #f5f5f5;
+}
+
+body {
+  background: var(--text-color);
+  color: var(--primary-bg);
+}
+
+.row {
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+.url_container .form_container {
+  background: var(--primary-bg);
+  padding: 10px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.url_container .form_container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.url_container .form_container h1 span {
+  color: coral;
+}
+
+.url_container .form_container .url_input,
+.url_container .form_container .result_container {
+  display: flex;
+}
+
+.url_container .form_container .url_input .form-control,
+.url_container .form_container .result_container .form-control {
+  border-color: transparent;
+  border-radius: 0;
+  background: var(--text-color);
+}
+
+.url_container .form_container .url_input .form-control:focus,
+.url_container .form_container .result_container .form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.url_container .form_container .url_input .icon {
+  display: flex;
+  align-items: center;
+  background: coral;
+  color: var(--text-color);
+  padding: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: -1px;
+}
+
+.url_container .form_container .result_container .icon {
+  display: flex;
+  align-items: center;
+  background: coral;
+  color: var(--text-color);
+  padding: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100px;
+  margin-left: -1px;
+}
+
+.url_container .form_container .url_input .icon .fa_icon,
+.url_container .form_container .result_container .icon .fa_icon {
+  margin-right: 0.3rem;
+}
+
+.url_container .dev {
+  position: absolute;
+  right: 0px;
+}
+
+.url_container .dev .link {
+  color: darkgray;
 }

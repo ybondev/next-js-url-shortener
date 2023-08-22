@@ -1,5 +1,6 @@
 "use client";
 import Result from "@components/Result";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
@@ -21,7 +22,16 @@ const page = () => {
 
   return (
     <section className="container url_container">
-      <div className="row">
+      <div className="row gy-3">
+        <div className="col-md-6">
+          <Image
+            src="./assets/undraw_link_shortener_mvf6.svg"
+            width={1000}
+            height={1000}
+            className="img-fluid"
+            alt="undraw_link_shortener_mvf6.svg"
+          />
+        </div>
         <div className="col-md-6">
           <div className="form_container">
             <h1>
@@ -46,7 +56,9 @@ const page = () => {
               setShorten={setShorten}
             />
             <div className="dev mt-3">
-              <Link href="" className="link">ybon.dev</Link>
+              <Link href="" className="link">
+                ybon.dev
+              </Link>
             </div>
           </div>
         </div>

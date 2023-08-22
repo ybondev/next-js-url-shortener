@@ -33,6 +33,13 @@ body {
   height: 100dvh;
   justify-content: center;
   align-items: center;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
 }
 
 .url_container .form_container {

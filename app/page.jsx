@@ -28,7 +28,7 @@ const page = () => {
             src="./assets/undraw_link_shortener_mvf6.svg"
             width={1000}
             height={1000}
-            className="img-fluid"
+            className="img-fluid mt-3"
             alt="undraw_link_shortener_mvf6.svg"
           />
         </div>

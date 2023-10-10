@@ -36,9 +36,17 @@ body {
   flex-direction: column-reverse;
 }
 
+.row .img-fluid {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .row {
     flex-direction: row;
+  }
+
+  .row .img-fluid {
+    display: block;
   }
 }
 

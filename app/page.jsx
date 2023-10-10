@@ -26,8 +26,8 @@ const page = () => {
         <div className="col-md-6">
           <Image
             src="./assets/undraw_link_shortener_mvf6.svg"
-            width={1000}
-            height={1000}
+            width={500}
+            height={0}
             className="img-fluid mt-3"
             alt="undraw_link_shortener_mvf6.svg"
           />
